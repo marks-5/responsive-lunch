@@ -1,0 +1,20 @@
+body {
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+}
+
+h2 {
+  margin: 20px;
+  font-size: 40px;
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+.menu-item {
+  border: 2px solid #AAA;
+  padding: 10px 10px 10px 10px;
+  margin: 10px;
+}
