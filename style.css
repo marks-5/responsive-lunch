@@ -4,8 +4,12 @@ body {
 }
 
 h2 {
-  margin: 20px;
+  display: inline;
   font-size: 40px;
+}
+
+#nav {
+  margin: 20px;
 }
 
 h3 {
@@ -15,6 +19,22 @@ h3 {
 
 p {
   line-height: 22px;
+}
+
+.arrow {
+  display: inline;
+  text-decoration: none;
+  color: black;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+#right-arrow {
+  float: right;
+}
+
+#left-arrow {
+  float: left;
 }
 
 ul {
@@ -27,6 +47,7 @@ ul {
   column-count: 3;
   column-gap: 15px;
   column-fill: auto;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu-item {
