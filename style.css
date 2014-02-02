@@ -13,8 +13,15 @@ h3 {
   font-size: 26px;
 }
 
+p {
+  line-height: 22px;
+}
+
 .menu-item {
-  border: 2px solid #AAA;
+  background-color: black;
+  color: white;
+  border: 2px solid #FFF;
+  border-radius: 8px;
   padding: 10px 10px 10px 10px;
   margin: 10px;
 }
