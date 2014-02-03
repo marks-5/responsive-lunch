@@ -1,9 +1,13 @@
 body {
   font-family: Helvetica, sans-serif;
   text-align: center;
+  background-color: black;
+/*  background-image: url('blackboard.jpg');*/ 
+/*  background-size: cover;*/
 }
 
 h2 {
+  color: white;
   display: inline;
   font-size: 36px;
 }
@@ -24,7 +28,7 @@ p {
 .arrow {
   display: inline;
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 36px;
   cursor: pointer;
 }
@@ -51,7 +55,9 @@ ul {
 
 .menu-item {
   display: inline-block;
-  background-color: black;
+/*  background-color: black;*/
+  background-image: url('blackboard.jpg');
+  background-size: cover;
   color: white;
   border: 2px solid #FFF;
   border-radius: 8px;
