@@ -51,13 +51,13 @@ p {
 
 ul {
   -webkit-column-count: 3;
-  -webkit-column-gap: 10px;
+  -webkit-column-gap: 0;
   -webkit-column-fill: auto;
   -moz-column-count: 3;
-  -moz-column-gap: 10px;
+  -moz-column-gap: 0;
   -moz-column-fill: auto;
   column-count: 3;
-  column-gap: 15px;
+  column-gap: 0;
   column-fill: auto;
 }
 
