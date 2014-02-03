@@ -2,11 +2,11 @@
 
 $(document).ready(function() {
   $('#tuesday').hide();
-  $('#right-arrow').click(function() {
+  $('#next-day').click(function() {
     $('#monday').hide();
     $('#tuesday').show();
   });
-  $('#left-arrow').click(function() {
+  $('#previous-day').click(function() {
     $('#tuesday').hide();
     $('#monday').show();
   });
