@@ -6,6 +6,18 @@ var menu = {
   friday: []
 }
 
+var days = [
+ "sunday",
+ "monday",
+ "tuesday",
+ "wednesday",
+ "thursday",
+ "friday",
+ "saturday"
+]
+
+var dayName = days[(new Date).getDay()];
+
 $(function(){
 
   // A row is a row in the spreadsheet, e.g:
@@ -56,20 +68,24 @@ $(function(){
     $('body').append(html);
     //Hide all the days and then show just monday
     $('.day').hide();
-    $currentDay = $('#monday');
+    $currentDay = $('#' + dayName);
     $currentDay.show();
-    nextDayClick();
+    $('.next-day').click(showNextDay);
+    $('.previous-day').click(showPreviousDay);
   }
 
   var $currentDay;
-  //Atempt to make on click of next-day take you to the next day - only works for 1 day
-  var nextDayClick = function() {
-    $('#next-day').click(function() {
-      $currentDay.hide();
-      $currentDay = $currentDay.next();
-      $currentDay.show();
-      nextDayClick();
-    });
+  //show the next day
+  var showNextDay = function() {
+    $currentDay.hide();
+    $currentDay = $currentDay.next();
+    $currentDay.show();
+  }
+  //show the previous day
+  var showPreviousDay = function() {
+    $currentDay.hide();
+    $currentDay = $currentDay.prev();
+    $currentDay.show();
   }
 
 

@@ -19,9 +19,10 @@
     <script id="meal-template" type="text/x-handlebars-template">
       {{#each this}}
         <div class="day" id="{{@key}}">
-          <div id="nav">
+          <div class="nav">
             <h2>{{@key}}</h2>
-            <div class="day-navigation" id="next-day"></div>
+            <div class="day-navigation next-day"></div>
+            <div class="day-navigation previous-day"></div>
           </div>
           <ul>
           {{#each this}}

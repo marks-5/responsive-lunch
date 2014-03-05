@@ -11,7 +11,7 @@ h2 {
   text-transform: capitalize;
 }
 
-#nav {
+.nav {
   position: relative;
   margin: 20px 5px 20px 5px;
   font-size: 36px;
@@ -34,22 +34,29 @@ p {
   cursor: pointer;
 }
 
-#next-day {
+.next-day {
   right: 0;
 }
 
-#next-day:after {
+.next-day:after {
   content: ">>";
 }
 
-#previous-day {
+#friday .next-day {
+  display: none;
+}
+
+.previous-day {
   left: 0;
 }
 
-#previous-day:before {
+.previous-day:before {
   content: "<<";
 }
 
+#monday .previous-day {
+  display: none;
+}
 
 ul {
   -webkit-column-count: 3;
@@ -82,7 +89,7 @@ ul {
 }
 
 @media (max-width: 415px) {
-  #nav {
+  .nav {
     font-size: 28px;
   }
 }
@@ -101,17 +108,17 @@ ul {
     -moz-column-count: 2;
     column-count: 2;
   }
-  #next-day:before {
+  .next-day:before {
     content: "next ";
   }
-  #next-day {
+  .next-day {
     font-size: 22px;
     top: 9px;
   }
-  #previous-day:after {
+  .previous-day:after {
     content: " previous";
   }
-  #previous-day {
+  .previous-day {
     font-size: 22px;
     padding: 12px 0 0 0;
   }
