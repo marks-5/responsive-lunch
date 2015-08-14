@@ -80,12 +80,14 @@ $(function(){
     $currentDay.hide();
     $currentDay = $currentDay.next();
     $currentDay.show();
+    ga('send', 'event', 'navigation', 'Click', 'nextDay');
   }
   //show the previous day
   var showPreviousDay = function() {
     $currentDay.hide();
     $currentDay = $currentDay.prev();
     $currentDay.show();
+    ga('send', 'event', 'navigation', 'Click', 'previousDay');
   }
 
 
